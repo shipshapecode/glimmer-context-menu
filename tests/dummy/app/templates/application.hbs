@@ -1,5 +1,9 @@
-{{page-title "Dummy"}}
+<div
+  class="fixed left-0 top-0 z-50"
+  style="position: fixed; left: 0; top: 0; z-index: 50;"
+  {{create-ref 'contextMenuContainer'}}
+></div>
 
-<h2 id="title">Welcome to Ember</h2>
+<ContextMenu @contextMenuContainer={{ref-to 'contextMenuContainer'}} />
 
-{{outlet}}
+<MenuTarget />
